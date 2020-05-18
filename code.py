@@ -27,6 +27,8 @@ lcd = character_lcd.Character_LCD_Mono(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, l
 
 
 # count push ups over a particular time.  Reset on restart.
+
+# TODO:  Only count push ups that fall in a particular distance from the sensor
 push_count = 0
 
 with HCSR04(trig, echo) as sonar:
