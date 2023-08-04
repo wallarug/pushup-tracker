@@ -36,4 +36,4 @@ with HCSR04(trig, echo) as sonar:
             sleep(2)
     except KeyboardInterrupt:
         pass
-    
+
