@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import board
 import digitalio
 import adafruit_character_lcd.character_lcd as character_lcd
@@ -21,7 +22,7 @@ trig = digitalio.DigitalInOut(board.D7)
 echo = digitalio.DigitalInOut(board.D7)
 
 
-# devices
+# devices - distance sensor
 sonar = HCSR04(trig, echo)
 lcd = character_lcd.Character_LCD_Mono(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows, lcd_backlight)
 
